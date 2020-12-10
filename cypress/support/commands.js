@@ -27,4 +27,7 @@
 
 Cypress.Commands.add('loginToApplication', () => {
   cy.visit('/login')
+  cy.get('[placeholder="Email"]').type('siam@email.com')
+  cy.get('[placeholder="Password"]').type('test123!@#')
+  cy.get('form').submit()
 })
