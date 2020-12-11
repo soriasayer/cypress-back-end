@@ -1,0 +1,19 @@
+{
+  "article": {
+    "title": "Test",
+    "slug": "test-krp88j",
+    "body": "Test",
+    "createdAt": "2020-12-11T10:48:00.388Z",
+    "updatedAt": "2020-12-11T10:48:00.388Z",
+    "tagList": [],
+    "description": "Test",
+    "author": {
+      "username": "mrgaga",
+      "bio": null,
+      "image": "",
+      "following": false
+    },
+    "favorited": true,
+    "favoritesCount": 1
+  }
+}

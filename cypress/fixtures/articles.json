@@ -1,0 +1,39 @@
+{
+  "articles": [
+    {
+      "title": "34",
+      "slug": "34-ylvauy",
+      "body": "34",
+      "createdAt": "2020-12-11T10:14:40.080Z",
+      "updatedAt": "2020-12-11T10:14:40.080Z",
+      "tagList": [],
+      "description": "34",
+      "author": {
+        "username": "syk",
+        "bio": "343434",
+        "image": "https://ss1.bdstatic.com/70cFvXSh_Q1YnxGkpoWK1HF6hhy/it/u=1587495984,2197122379\u0026fm=11\u0026gp=0.jpg",
+        "following": false
+      },
+      "favorited": false,
+      "favoritesCount": 3
+    },
+    {
+      "title": "Test",
+      "slug": "test-pr0dfv",
+      "body": "Test",
+      "createdAt": "2020-12-11T10:11:27.411Z",
+      "updatedAt": "2020-12-11T10:11:27.411Z",
+      "tagList": ["test"],
+      "description": "Test",
+      "author": {
+        "username": "mrgaga",
+        "bio": null,
+        "image": "",
+        "following": false
+      },
+      "favorited": false,
+      "favoritesCount": 5
+    }
+  ],
+  "articlesCount": 500
+}

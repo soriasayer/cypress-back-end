@@ -1,12 +1,12 @@
-import { Component, OnInit } from '@angular/core';
-import { FormBuilder, FormGroup } from '@angular/forms';
-import { Router } from '@angular/router';
+import { Component, OnInit } from "@angular/core";
+import { FormBuilder, FormGroup } from "@angular/forms";
+import { Router } from "@angular/router";
 
-import { User, UserService } from '../core';
+import { User, UserService } from "../core";
 
 @Component({
-  selector: 'app-settings-page',
-  templateUrl: './settings.component.html'
+  selector: "app-settings-page",
+  templateUrl: "./settings.component.html",
 })
 export class SettingsComponent implements OnInit {
   user: User = {} as User;
@@ -21,11 +21,11 @@ export class SettingsComponent implements OnInit {
   ) {
     // create form group using the form builder
     this.settingsForm = this.fb.group({
-      image: '',
-      username: '',
-      bio: '',
-      email: '',
-      password: ''
+      image: "",
+      username: "",
+      bio: "",
+      email: "",
+      password: "",
     });
     // Optional: subscribe to changes on the form
     // this.settingsForm.valueChanges.subscribe(values => this.updateUser(values));
@@ -40,7 +40,7 @@ export class SettingsComponent implements OnInit {
 
   logout() {
     this.userService.purgeAuth();
-    this.router.navigateByUrl('/');
+    this.router.navigateByUrl("/");
   }
 
   submitForm() {
@@ -49,11 +49,10 @@ export class SettingsComponent implements OnInit {
     // update the model
     this.updateUser(this.settingsForm.value);
 
-    this.userService
-    .update(this.user)
-    .subscribe(
-      updatedUser => this.router.navigateByUrl('/profile/' + updatedUser.username),
-      err => {
+    this.userService.update(this.user).subscribe(
+      (updatedUser) =>
+        this.router.navigateByUrl("/profile/" + updatedUser.username),
+      (err) => {
         this.errors = err;
         this.isSubmitting = false;
       }
@@ -63,5 +62,4 @@ export class SettingsComponent implements OnInit {
   updateUser(values: Object) {
     Object.assign(this.user, values);
   }
-
 }
